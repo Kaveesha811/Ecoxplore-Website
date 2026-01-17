@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoXplore Adventures | Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>EcoXplore</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tours.html">Tours & Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero booking-hero">
+        <img src="images/booking-hero.jpg" alt="Booking Adventure Tour">
+        <div class="hero-text">
+            <h2>Book Your Adventure</h2>
+            <p>Fill out the form below to reserve your eco-friendly tour.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <h2>Tour Booking Form</h2>
+        <form id="bookingForm">
+            <!-- Name -->
+            <label for="name">Full Name <span>*</span></label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <!-- Email -->
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <!-- Phone -->
+            <label for="phone">Phone Number <span>*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +94 77 123 4567" required pattern="[+0-9\s]{10,15}">
+
+            <!-- Select Tour -->
+            <label for="tour">Select Tour <span>*</span></label>
+            <select id="tour" name="tour" required>
+                <option value="">--Select a Tour--</option>
+                <option value="mountain-hiking">Mountain Hiking Adventure - $150</option>
+                <option value="river-rafting">River Rafting Experience - $200</option>
+                <option value="eco-camping">Eco Camping Experience - $100</option>
+                <option value="mountain-cycling">Mountain Cycling Adventure - $180</option>
+                <option value="jungle-safari">Jungle Safari & Wildlife Tour - $220</option>
+                <option value="coastal-retreat">Coastal Retreat & Snorkeling - $250</option>
+            </select>
+
+            <!-- Date -->
+            <label for="date">Preferred Date <span>*</span></label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Payment Method -->
+            <label for="payment">Payment Method <span>*</span></label>
+            <select id="payment" name="payment" required>
+                <option value="">--Select Payment Method--</option>
+                <option value="credit-card">Credit Card (Visa, MasterCard, American Express)</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="paypal">PayPal</option>
+                <option value="stripe">Stripe</option>
+                <option value="mobile-wallet">Mobile Wallet (Apple Pay, Google Pay)</option>
+            </select>
+
+            <!-- Payment Slip Upload -->
+            <label for="paymentSlip">Upload Payment Slip <span>*</span></label>
+            <input type="file" id="paymentSlip" name="paymentSlip" accept=".pdf,.jpg,.jpeg,.png" required>
+            <small style="color: #666; display: block; margin-top: 0.5rem;">Accepted formats: PDF, JPG, PNG (Max 5MB)</small>
+
+            <!-- Notes -->
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" placeholder="Any special requests or information..." rows="4"></textarea>
+
+            <!-- Submit -->
+            <button type="submit" class="btn">Submit Booking</button>
+        </form>
+
+        <div id="formMessage" class="form-message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About EcoXplore</h3>
+                <p>We are passionate about eco-tourism, providing adventure tours that are fun, safe, and sustainable. Your journey with us makes a difference.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" title="Follow us on Facebook">f</a>
+                    <a href="#" aria-label="Twitter" title="Follow us on Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram" title="Follow us on Instagram">📷</a>
+                    <a href="#" aria-label="YouTube" title="Subscribe on YouTube">▶</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tours.html">Tours & Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> <a href="tel:+94771234567">+94 77 123 4567</a></p>
+                <p><strong>Email:</strong> <a href="mailto:ecoxploresl@gmail.com">ecoxploresl@gmail.com</a></p>
+                <p><strong>Address:</strong><br>123 Eco Street, Green City, Sri Lanka</p>
+                <p><strong>Hours:</strong><br>Mon - Fri: 9:00 AM - 5:00 PM<br>Sat - Sun: Closed</p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new tours and special offers!</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-small">Subscribe</button>
+                </form>
+                <p id="newsletterMessage" class="form-message"></p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EcoXplore Adventures. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+/* Hero slider buttons */
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(10, 61, 46, 0.7);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-slide { left: 10px; }
+.next-slide { right: 10px; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tour-cards {
+        flex-direction: column;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}

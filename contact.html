@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoXplore Adventures | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>EcoXplore</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tours.html">Tours & Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero contact-hero">
+        <img src="images/hero1.jpg" alt="Contact EcoXplore Adventures">
+        <div class="hero-text">
+            <h2>Contact Us</h2>
+            <p>We’re here to help. Reach out to us with any questions or inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact container">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-content">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Our Contact Details</h3>
+                <p><strong>Address:</strong> 123 Eco Street, Green City, Sri Lanka</p>
+                <p><strong>Phone:</strong> +94 77 123 4567</p>
+                <p><strong>Email:</strong> ecoxploresl@gmail.com</p>
+                <p><strong>Office Hours:</strong> Mon – Fri, 9:00 AM – 5:00 PM</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form id="contactForm">
+                    <label for="cname">Full Name <span>*</span></label>
+                    <input type="text" id="cname" name="cname" placeholder="Your full name" required>
+
+                    <label for="cemail">Email <span>*</span></label>
+                    <input type="email" id="cemail" name="cemail" placeholder="example@email.com" required>
+
+                    <label for="cmessage">Message <span>*</span></label>
+                    <textarea id="cmessage" name="cmessage" rows="5" placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" onclick="validateForm()" class="btn"   >Send Message</button>
+                </form>
+                <div id="contactMessage" class="form-message"></div>
+            </div>
+        </div>
+        
+        <script>
+            function validateForm() {
+            alert("Your form was successfully submitted!");
+      }
+        </script>
+
+        <!-- Optional Google Map -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9981994580217!2d79.86124331508413!3d6.927079595000932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259aaea9e8b7d%3A0x19adf3d3c1f12c3f!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1699364490000!5m2!1sen!2sus" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About EcoXplore</h3>
+                <p>We are passionate about eco-tourism, providing adventure tours that are fun, safe, and sustainable. Your journey with us makes a difference.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" title="Follow us on Facebook">f</a>
+                    <a href="#" aria-label="Twitter" title="Follow us on Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram" title="Follow us on Instagram">📷</a>
+                    <a href="#" aria-label="YouTube" title="Subscribe on YouTube">▶</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tours.html">Tours & Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> <a href="tel:+94771234567">+94 77 123 4567</a></p>
+                <p><strong>Email:</strong> <a href="mailto:ecoxploresl@gmail.com">ecoxploresl@gmail.com</a></p>
+                <p><strong>Address:</strong><br>123 Eco Street, Green City, Sri Lanka</p>
+                <p><strong>Hours:</strong><br>Mon - Fri: 9:00 AM - 5:00 PM<br>Sat - Sun: Closed</p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new tours and special offers!</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-small">Subscribe</button>
+                </form>
+                <p id="newsletterMessage" class="form-message"></p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EcoXplore Adventures. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

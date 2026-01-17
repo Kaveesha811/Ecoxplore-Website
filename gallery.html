@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoXplore Adventures | Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>EcoXplore</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tours.html">Tours & Packages</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero gallery-hero">
+        <img src="images/hero3.jpg" alt="Gallery of EcoXplore adventures">
+        <div class="hero-text">
+            <h2>Our Adventure Gallery</h2>
+            <p>Take a glimpse of our eco-friendly tours and adventures.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery container">
+        <h2>Photo Gallery</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hiking">Mountain Hiking</button>
+            <button class="filter-btn" data-filter="rafting">River Rafting</button>
+            <button class="filter-btn" data-filter="camping">Eco Camping</button>
+            <button class="filter-btn" data-filter="cycling">Cycling</button>
+            <button class="filter-btn" data-filter="safari">Jungle Safari</button>
+            <button class="filter-btn" data-filter="coastal">Coastal Retreat</button>
+        </div>
+
+        <!-- Mountain Hiking Gallery -->
+        <div class="gallery-category" data-category="hiking">
+            <h3>Mountain Hiking Adventure</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-filter="hiking">
+                    <img src="images/hiking1.jpg" alt="Mountain hiking trail">
+                </div>
+                <div class="gallery-item" data-filter="hiking">
+                    <img src="images/hiking2.jpg" alt="Hiking group at summit">
+                </div>
+                <div class="gallery-item" data-filter="hiking">
+                    <img src="images/hiking3.jpg" alt="Mountain landscape">
+                </div>
+            </div>
+        </div>
+
+        <!-- River Rafting Gallery -->
+        <div class="gallery-category" data-category="rafting">
+            <h3>River Rafting Experience</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-filter="rafting">
+                    <img src="images/rafting1.jpg" alt="Rafting in rapids">
+                </div>
+                <div class="gallery-item" data-filter="rafting">
+                    <img src="images/rafting2.jpg" alt="Rafting team adventure">
+                </div>
+                <div class="gallery-item" data-filter="rafting">
+                    <img src="images/rafting3.jpg" alt="River landscape">
+                </div>
+            </div>
+        </div>
+
+        <!-- Eco Camping Gallery -->
+        <div class="gallery-category" data-category="camping">
+            <h3>Eco Camping Experience</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-filter="camping">
+                    <img src="images/camping1.jpg" alt="Eco-friendly campsite">
+                </div>
+                <div class="gallery-item" data-filter="camping">
+                    <img src="images/camping2.jpg" alt="Camping under stars">
+                </div>
+                <div class="gallery-item" data-filter="camping">
+                    <img src="images/camping3.jpg" alt="Forest camping">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mountain Cycling Gallery -->
+        <div class="gallery-category" data-category="cycling">
+            <h3>Mountain Cycling Adventure</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-filter="cycling">
+                    <img src="images/cycling1.jpg" alt="Cycling on mountain trail">
+                </div>
+                <div class="gallery-item" data-filter="cycling">
+                    <img src="images/cycling2.jpg" alt="Cycling group">
+                </div>
+                <div class="gallery-item" data-filter="cycling">
+                    <img src="images/cycling3.jpg" alt="Scenic cycling route">
+                </div>
+            </div>
+        </div>
+
+        <!-- Jungle Safari Gallery -->
+        <div class="gallery-category" data-category="safari">
+            <h3>Jungle Safari & Wildlife Tour</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-filter="safari">
+                    <img src="images/safari1.jpg" alt="Wildlife in jungle">
+                </div>
+                <div class="gallery-item" data-filter="safari">
+                    <img src="images/safari2.jpg" alt="Safari vehicle adventure">
+                </div>
+                <div class="gallery-item" data-filter="safari">
+                    <img src="images/safari3.jpg" alt="Wildlife in jungle">
+                </div>
+            </div>
+        </div>
+
+        <!-- Coastal Retreat Gallery -->
+        <div class="gallery-category" data-category="coastal">
+            <h3>Coastal Retreat & Snorkeling</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-filter="coastal">
+                    <img src="images/coastal1.jpg" alt="Beautiful beach">
+                </div>
+                <div class="gallery-item" data-filter="coastal">
+                    <img src="images/coastal2.jpg" alt="Boat ride">
+                </div>
+                <div class="gallery-item" data-filter="coastal">
+                    <img src="images/coastal3.jpg" alt="Coral reef snorkeling experience">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About EcoXplore</h3>
+                <p>We are passionate about eco-tourism, providing adventure tours that are fun, safe, and sustainable. Your journey with us makes a difference.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" title="Follow us on Facebook">f</a>
+                    <a href="#" aria-label="Twitter" title="Follow us on Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram" title="Follow us on Instagram">📷</a>
+                    <a href="#" aria-label="YouTube" title="Subscribe on YouTube">▶</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="tours.html">Tours & Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> <a href="tel:+94771234567">+94 77 123 4567</a></p>
+                <p><strong>Email:</strong> <a href="mailto:ecoxploresl@gmail.com">ecoxploresl@gmail.com</a></p>
+                <p><strong>Address:</strong><br>123 Eco Street, Green City, Sri Lanka</p>
+                <p><strong>Hours:</strong><br>Mon - Fri: 9:00 AM - 5:00 PM<br>Sat - Sun: Closed</p>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get updates on new tours and special offers!</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-small">Subscribe</button>
+                </form>
+                <p id="newsletterMessage" class="form-message"></p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 EcoXplore Adventures. All Rights Reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#disclaimer">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
